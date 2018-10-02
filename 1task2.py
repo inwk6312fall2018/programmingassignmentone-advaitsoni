@@ -18,8 +18,7 @@ def change_ip(file_name):
 	for i in lst2:
 		lst3.append(i.split('.'))	#list of elements in ip
 	for i in lst3:		#remove '172' or '192' and update with '10'
-		del i[0]	#del first element
-		i.insert(0,'10')	#insert '10' at first location
+		i[0]='10'	#update ip add
 		lst4.append('.'.join(i))	#add upated ip add in list
 	return lst4
 
